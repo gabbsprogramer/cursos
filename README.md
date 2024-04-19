@@ -1,5 +1,5 @@
 # cursos
- html5 e css3
+- Html5 and Css3
 
-desafio de um site responsivo: 
-<a href="https://gabbsprogramer.github.io/cursos/desafios/android.html"> executar o site </a>
+- Challenge of a responsive website:
+<a href="https://gabbsprogramer.github.io/cursos/desafios/android.html"> Get to know android: </a>
