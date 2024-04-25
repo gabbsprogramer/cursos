@@ -30,6 +30,8 @@
 body {
     background-color: var(--cor1);
     font-family: var(--fonte-JetBrains);
+    min-height: 100vh;
+    font-style: italic;
 }
 
 main p {
@@ -40,11 +42,8 @@ main p {
     line-height: 2em;
 }
 
-main p.imagem1 {
-    background-color: white;
-}
-
 header {
+    font-style: normal;
     background-color: var(--cor0);
     min-height: 100px;
     text-align: center;
@@ -71,24 +70,48 @@ header p {
     padding-bottom: 40px;
 }
 
-header a {
+a {
     font-family: var(--fonte-JetBrains);
     color: var(--cor1);
     text-decoration: none;
     font-weight: bold;
 }
 
-header a:hover {
+a:hover {
     color: rgba(151, 50, 50, 0.713);
 }
 
-article.imagem1 {
-    height: 30vh;
-    color: var(--cor1);
-    background-color: black;
-    background-image: url(imagens/porsche1.jpeg);
-    background-position: center center;
+article#imagem1 {
+    height: 40vh;
+    background-image: url('imagens/porsche1.jpeg');
+    background-position: left center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+article#imagem2 {
+    height: 40vh;
+    background-image: url('imagens/porsche2.jpeg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+article.imagem > p {
+    color: var(--cor1);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0.311);
+    text-shadow: rgb(1px, 1px, 0, black);
+}
+
+footer {
+    font-style: normal;
+    background-color: var(--cor0);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
