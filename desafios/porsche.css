@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'jet brains';
+    src: url('JetBrainsMono-Bold\ -\ cópia.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'porsche';
+    src: url('911porschav33d.ttf') format('opentype');
+}
+
+:root {
+    --cor0: #003c5f;
+    --cor1: #97c6d3;
+    --cor3: #395fa1;
+    --cor4: #0f79ba;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-JetBrains: 'Jet Brains', cursive;
+    --fonte-destaque: 'porsche', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-JetBrains);
+}
+
+main p {
+    margin: 15px 5px;
+    text-align: left;
+    text-indent: 1px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main p.imagem1 {
+    background-color: white;
+}
+
+header {
+    background-color: var(--cor0);
+    min-height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header h1 {
+    color: rgba(151, 50, 50, 0.713);
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+header p {
+    font-family: var(--fonte-JetBrains);
+    font-size: 12px;
+    color: var(--cor1);
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+header a {
+    font-family: var(--fonte-JetBrains);
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: rgba(151, 50, 50, 0.713);
+}
+
+article.imagem1 {
+    height: 30vh;
+    color: var(--cor1);
+    background-color: black;
+    background-image: url(imagens/porsche1.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
