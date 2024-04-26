@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Passion One';
+    src: url(fontes/PassionOne-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(fontes/Sriracha-Regular.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+:root {
+    --cor0: #59372A;
+    --cor1: #D9D4D2;
+    --cor2: #A68F7B;
+
+    --fonte-padrao: verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Sriracha', cursive;
+    --fonte-passion: 'Passion One', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-destaque);
+}
+
+header {
+    background-color: var(--cor0);
+    min-height: 130px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header h1 {
+    color: var(--cor1);
+    font-family: var(--fonte-passion);
+    font-weight: normal;
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: var(--cor2);
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+a:hover {
+    color: var(--cor2);
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cor0);
+    text-align: center;
+    color: var(--cor2);
+    font-size: 0.8em;
+    padding: 5px;
+}
