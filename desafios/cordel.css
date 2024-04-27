@@ -34,6 +34,43 @@ body {
     font-family: var(--fonte-destaque);
 }
 
+main  p{
+    margin: 15px 0px;
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.5m;
+    font-size: 2em;
+    padding: 40px;
+}
+
+section#imagem1 {
+    background-image: url('imagens/cordel.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#imagem2 {
+    background-image: url('imagens/cordel1.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    color: var(--cor1);
+    background-color: rgb(0, 0, 0, 0.311);
+    display: inline-block;
+    text-shadow: 1px 1px 0 black;
+}
+
+section.imagem {
+    padding: 5.5px;
+    margin: auto;
+}
+
 header {
     background-color: var(--cor0);
     min-height: 130px;
@@ -45,7 +82,7 @@ header h1 {
     color: var(--cor1);
     font-family: var(--fonte-passion);
     font-weight: normal;
-    font-size: 4em;
+    font-size: 7em;
     margin-bottom: 5px;
 }
 
